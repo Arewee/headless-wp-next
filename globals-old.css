@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+
+/* COMMENTS */
+
+/*! --------- GLOBAL SETTINGS --------------- */
+
+:root {
+
+        --bg: hsl(221, 26%, 21%);
+        --primary: hsl(113, 31%, 95%);
+        --accent: hsl(351, 96%, 44%);
+        --accent-lt: hsl(351, 96%, 64%);
+        --fs-l: 3rem;
+        --fs-m: 2rem;
+        --fs-s: 1rem;
+        --sp-l: 32px;
+        --sp-m: 24px;
+        --sp-s: 20px;
+        --sp-xs: 12px; 
+        
+      }
+      
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        
+        background: var(--bg);
+        color: var(--primary);
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-size: var(--fs-s);
+        
+      }
+      
+      h1,
+      h2,
+      h3 {
+        line-height: 1.1;
+        margin: 0;
+      }
+      
+      img {
+      max-width: 100%;
+      }
+      
+      button:hover {
+        cursor: pointer;
+      }
+      
+      /*? --------- UTILITY CLASSES --------------- */
+      
+      .wrapper {
+            width: min(100% - 40px, 60rem);
+            margin-inline: auto;
+          }
+          
+      .padder {
+        padding-block: clamp(2rem, 0.18rem + 7.75vw, 6rem);
+      }
+
+     
+      
+      /*! --------- HEADER ---------------------- */
+
+      .nav-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+         }
+
+     .nav-container .home-link {
+            margin-right: auto;
+      } 
+
+      .nav-container a.link {
+            color: snow;
+            text-decoration: none;
+      }
+      
+      /*! --------- Blog ---------------------- */
+
+
+      .post-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+     
+      }
+
+      .single-post {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+  
+            min-height: 50vh;
+      }
+
+      .post-thumbnail-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 100px;
+            aspect-ratio: 4/3;
+            margin-inline: auto;
+          }
+
+          .post-thumbnail-wrapper-single {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 4/3;
+            margin-inline: auto;
+          }    
+
+      .post-thumbnail {
+            border-radius: 8px; /* ← valfritt, för snyggare rundade hörn */
+          }
+
+      ul.blog-list {
+            list-style: none;
+            padding: 2rem 0;
+            margin:0;
+      }
+
+      .blog-post {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: .5rem;;
+      }
+
+      li.blog-post a {
+            color: snow;
+            text-decoration: none;
+      }
+
+      .btn-back-to-blog {
+            background-color: rgb(24, 24, 24);
+            padding: 0.5rem 1rem;
+            border-radius: .5rem;
+            text-decoration: none;
+            color: snow;
+      }
+          
+      
+      /*! --------- SECTION 3 ---------------------- */
+      
+      /*! --------- SECTION 4 ---------------------- */
+      
+      /*! --------- SECTION 5 ---------------------- */
+      
+      /*? --------- MEDIA QUERIES ----------------- */
+      
+      /*! --------- FOOTER --------------- */
